@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe6ea; /* Soft pink background for a romantic feel */
+    font-family: 'Caveat', cursive; /* Handwritten font for the love letter theme */
+}
+
+.HiJam {
+    text-align: center;
+    background-color: #fff; /* White background for the letter */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a nice effect */
+    margin-bottom: 20px; /* Add margin at the bottom to separate from the buttons */
+}
+
+.HiJam p {
+    margin: 0;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+.HiJam span {
+    font-weight: bold; /* Make the name bold */
+}
+
+.pindutan {
+    display: flex;
+    justify-content: center;
+}
+
+.yes-btn, .no-btn {
+    background-color: #ffffff; /* White */
+    border: 1px solid #000; /* Black border */
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+audio {
+    display: none;
+}

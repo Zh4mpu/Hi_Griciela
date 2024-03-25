@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hi Jam crush kita!!!</title>
+</head>
+<body onclick="startMusic()">
+    <div class="HiJam">
+        <p>
+            <span>Hi Jam</span><br>
+            Gusto kita, can I court you?
+        </p>
+    </div>
+
+    <div class="pindutan">
+        <pindutan class="yes-btn">Yes</pindutan>
+        <pindutan class="no-btn">No</pindutan>
+    </div>
+
+    <audio id="musicPlayer" controls>
+        <source src="Kolohe Kai  Butterflies.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function startMusic() {
+            var musicPlayer = document.getElementById("musicPlayer");
+            musicPlayer.play();
+            // Remove the onclick attribute after clicking once to prevent further triggering
+            document.body.removeAttribute("onclick");
+        }
+    </script>
+</body>
+</html>
