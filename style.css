@@ -18,6 +18,8 @@ body {
     margin-bottom: 20px; /* Add margin at the bottom to separate from the buttons */
 }
 
+
+
 .HiJam p {
     margin: 0;
     font-size: 20px; /* Adjust font size as needed */
@@ -26,6 +28,8 @@ body {
 .HiJam span {
     font-weight: bold; /* Make the name bold */
 }
+
+
 
 .pindutan {
     display: flex;
@@ -49,3 +53,33 @@ body {
 audio {
     display: none;
 }
+
+
+.butterfly {
+    position: absolute;
+    top: 140px; /* Adjust as needed */
+    left: 500px; /* Adjust as needed */
+}
+
+
+.hahahuhu {
+    position: absolute;
+    top: 54px; /* Adjust as needed */
+    left: 1000px; /* Adjust as needed */
+}
+
+.sadboi {
+    position: absolute;
+    top: 445px;
+    left:250px;
+}
+
+.please {
+    position: absolute;
+    top: 500px;
+    left:700px;
+}
+
+
+
+

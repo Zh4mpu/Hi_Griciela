@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hi Jam crush kita!!!</title>
+</head>
+<body onclick="startMusic()">
+    <div class="HiJam">
+        <p>
+            <span>Hi Jam</span><br>
+            Gusto kita, can I court you?
+        </p>
+    </div>
+
+    <div class="pindutan">
+        <pindutan class="yes-btn" onclick="navigateToAnotherPage()">Yes</pindutan>
+        <pindutan class="no-btn" onclick="toggleImages()">No</pindutan>
+    </div>
+
+    <div class="butterfly">
+        <img src="butterfly-animated-gif-45.gif" alt="gif-overlay" style="width: 185px; height: auto;"> 
+    </div>
+
+    <div class="hahahuhu" id="hahahuhuDiv" style="display: none;">
+        <img id="hahahuhu" src="hahahuhu.jpg" alt="iyaktawa" style="width: 200px; height: auto;">
+    </div>
+
+    <img class="sadboi" id="sadboi" src="https://c.tenor.com/6CujUsC1CIkAAAAM/crying-black-guy-meme50fps-interpolated-interpolated.gif" alt="" style="display: none;">
+
+    <audio id="musicPlayer" controls>
+        <source src="Kolohe Kai  Butterflies.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        var hahahuhuVisible = false;
+
+        function startMusic() {
+            var musicPlayer = document.getElementById("musicPlayer");
+            musicPlayer.play();
+            // Remove the onclick attribute after clicking once to prevent further triggering
+            document.body.removeAttribute("onclick");
+        }
+
+        function toggleImages() {
+            if (!hahahuhuVisible) {
+                document.getElementById("hahahuhuDiv").style.display = "block";
+                hahahuhuVisible = true;
+            } else {
+                var sadboi = document.getElementById("sadboi");
+                if (sadboi.style.display === "none") {
+                    sadboi.style.display = "block";
+                } else {
+                    sadboi.style.display = "none";
+                }
+            }
+        }
+
+        function navigateToAnotherPage() {
+            window.location.href = "yes.html"; // Change "anotherpage.html" to the desired URL
+        }
+    </script>
+</body>
+</html>
