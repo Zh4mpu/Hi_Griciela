@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Hi Jam crush kita!!!</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        
+        .butterfly {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .HiJam {
+            /* Add any styles you want for the HiJam section */
+        }
+    </style>
 </head>
 <body onclick="startMusic()">
-    <div class="HiJam">
-        <p>
-            <span>Hi Jam</span><br>
-            Gusto kita, can I court you?
-        </p>
+    <div class="container">
+        <div class="HiJam">
+            <p>
+                <span>Hi Jam</span><br>
+                Gusto kita, can I court you?
+            </p>
+        </div>
+    
+        <div class="butterfly">
+            <img src="butterfly-animated-gif-45.gif" alt="gif-overlay" style="width: 185px; height: auto;"> 
+        </div>
     </div>
 
     <div class="pindutan">
@@ -19,15 +40,8 @@
         <pindutan class="no-btn" onclick="toggleImages()">No</pindutan>
     </div>
 
-
-
-
     <div class="please">
         <img src="https://media1.tenor.com/m/tsK3iFV9aQQAAAAd/pleasedog-please.gif" alt="gif-overlay" style="width: 185px; height: auto;"> 
-    </div>
-
-    <div class="butterfly">
-        <img src="butterfly-animated-gif-45.gif" alt="gif-overlay" style="width: 185px; height: auto;"> 
     </div>
 
     <div class="hahahuhu" id="hahahuhuDiv" style="display: none;">
@@ -42,7 +56,6 @@
 
     <script>
         var hahahuhuVisible = false;
-        var sadboi = false;
 
         function startMusic() {
             var musicPlayer = document.getElementById("musicPlayer");
