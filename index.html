@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Hi Jam crush kita!!!</title>
+    <title>Hi Griciela crush kita!!!</title>
 </head>
 <body onclick="startMusic()">
-    <div class="HiJam">
+    <div class="HiShelay">
         <p>
-            <span>Hi Jam</span><br>
+            <span>Hi Shelay</span><br>
             Gusto kita, can I court you?
         </p>
     </div>
@@ -19,15 +19,12 @@
         <pindutan class="no-btn" onclick="toggleImages()">No</pindutan>
     </div>
 
-
-
-
-    <div class="please">
-        <img src="https://media1.tenor.com/m/tsK3iFV9aQQAAAAd/pleasedog-please.gif" alt="gif-overlay" style="width: 185px; height: auto;"> 
-    </div>
-
     <div class="butterfly">
         <img src="butterfly-animated-gif-45.gif" alt="gif-overlay" style="width: 185px; height: auto;"> 
+    </div>
+
+    <div class="cute">
+        <img src="cute-please.gif" alt="gif-overlay" style="width: 185px; height: auto;"> 
     </div>
 
     <div class="hahahuhu" id="hahahuhuDiv" style="display: none;">
@@ -36,13 +33,15 @@
 
     <img class="sadboi" id="sadboi" src="https://c.tenor.com/6CujUsC1CIkAAAAM/crying-black-guy-meme50fps-interpolated-interpolated.gif" alt="" style="display: none;">
 
+
     <audio id="musicPlayer" controls>
         <source src="Kolohe Kai  Butterflies.mp3" type="audio/mpeg">
     </audio>
 
     <script>
         var hahahuhuVisible = false;
-        var sadboi = false;
+        var sadboiVisible = false;
+        var pleaseVisible = false;
 
         function startMusic() {
             var musicPlayer = document.getElementById("musicPlayer");
@@ -59,9 +58,13 @@
                 var sadboi = document.getElementById("sadboi");
                 if (sadboi.style.display === "none") {
                     sadboi.style.display = "block";
+                    sadboiVisible = true;
                 } else {
                     sadboi.style.display = "none";
+                    sadboiVisible = false;
                 } 
+                
+                
             }
         }
 

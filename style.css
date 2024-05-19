@@ -9,7 +9,7 @@ body {
     font-family: 'Caveat', cursive; /* Handwritten font for the love letter theme */
 }
 
-.HiJam {
+.HiShelay {
     text-align: center;
     background-color: #fff; /* White background for the letter */
     padding: 50px;
@@ -20,12 +20,12 @@ body {
 
 
 
-.HiJam p {
+.HiShelay p {
     margin: 0;
     font-size: 20px; /* Adjust font size as needed */
 }
 
-.HiJam span {
+.HiShelay span {
     font-weight: bold; /* Make the name bold */
 }
 
@@ -58,7 +58,7 @@ audio {
 .butterfly {
     position: absolute;
     top: 140px; /* Adjust as needed */
-    left: 12px; /* Adjust as needed */
+    left: 500px; /* Adjust as needed */
 }
 
 
@@ -71,14 +71,17 @@ audio {
 .sadboi {
     position: absolute;
     top: 445px;
-    left:250px;
+    left:400px;
 }
 
-.please {
+.cute {
     position: absolute;
-    top: 500px;
-    left:700px;
+    top: 445px;
+    left:900px;
 }
+
+
+
 
 
 
